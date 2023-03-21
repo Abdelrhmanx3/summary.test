@@ -1,0 +1,204 @@
+:root {
+    --sec-color: #b2aaaf;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container .first-card {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 390px;
+    padding-bottom: 20px;
+}
+
+.container .first-card h3 {
+    color: var(--sec-color);
+    font-size: 26px;
+}
+
+.container .first-card p {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .first-card span {
+    color: white;
+
+}
+
+.container .first-card .info {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    background: linear-gradient(#4c22ca, #4633ed);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.container .first-card .info p {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.container .first-card .info span {
+    color: var(--sec-color);
+}
+
+.container .sec-card {
+    border-radius: 0 15px 15px 0px;
+    width: 300px;
+    box-shadow: 5px 0 0px hsl(252, 100%, 67%);
+}
+
+.container .sec-card>p {
+    margin-left: 20px;
+    text-align: start;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.container .sec-card ul {
+    list-style: none;
+}
+
+.container .sec-card ul .first,
+.container .sec-card ul .sec,
+.container .sec-card ul .third,
+.container .sec-card ul .fourth {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.container .sec-card ul .num-1,
+.container .sec-card ul .num-2,
+.container .sec-card ul .num-3,
+.container .sec-card ul .num-4 {
+    display: flex;
+    align-items: center;
+}
+
+.container .sec-card ul .sym {
+    padding: 0 7px;
+}
+
+.container .sec-card ul span {
+    color: var(--sec-color)
+}
+
+.container .sec-card ul .first {
+    background-color: #fff6f5;
+
+}
+
+.container .sec-card ul li {
+    display: flex;
+}
+
+.container .sec-card ul li img {
+    margin-right: 15px;
+    align-items: center;
+}
+
+.container .sec-card ul li .r {
+    color: #cd6d6a;
+}
+
+.container .sec-card ul .sec {
+    background-color: #fffbf2;
+}
+
+.container .sec-card ul .m {
+    color: #d9b35f;
+}
+
+.container .sec-card ul .third {
+    background-color: #f3fdfb;
+}
+
+.container .sec-card ul .ve {
+    color: #27a080;
+}
+
+.container .sec-card ul .fourth {
+    background-color: #f3f3fd;
+}
+
+.container .sec-card ul .vi {
+    color: #3b3e94;
+}
+
+.container .input {
+    background: linear-gradient(to bottom, #6340fb, #312de9);
+    border: none;
+    padding: 10px 80px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.my-name {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    background: linear-gradient(to bottom, #6340fb, #312de9);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+@media (max-width:767px) {
+    .container {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .container .first-card {
+        border-radius: none;
+    }
+
+    .container .sec-card {
+        width: 100%;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .container .input {
+        margin-bottom: 20px;
+    }
+
+    .my-name {
+        display: none;
+    }
+}
